@@ -48,6 +48,11 @@ namespace Nhom4.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "maloaisp,Name,Slug,ParentId,Orders,MetaDesc,MetaKey,CreatedBy,CreatedAt,UpdatedBy,UpdatedAt,Status")] Category category)
         {
+            try
+            {
+
+            }
+            catch { }
             if (ModelState.IsValid)
             {
                 db.Categorys.Add(category);
