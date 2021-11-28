@@ -1,0 +1,34 @@
+﻿@model ShoesStore.Models.admin
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+<div class="row justify-content-md-center">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Login
+            </div>
+            <div class="card-body">
+                @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="form-group">
+                        @Html.DisplayNameFor(model => model.tentk)
+                        @Html.TextBoxFor(m => m.email, "", new { @class = "form-control", @placeholder = "Email" })
+
+                    </div>
+                    <div class="form-group">
+                        @Html.DisplayNameFor(model => model.matkhau)
+                        @Html.PasswordFor(model => model.matkhau, new { @class = "form-control", @placeholder = "Password" })
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" class="btn btn-primary" value="Login" />
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
