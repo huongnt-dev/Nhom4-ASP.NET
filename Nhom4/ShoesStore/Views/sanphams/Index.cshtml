@@ -1,0 +1,70 @@
+﻿@model IEnumerable<ShoesStore.Models.sanpham>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Quản lý sản phẩm</h2>
+
+<p>
+    @Html.ActionLink("Thêm mới", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.tensp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.loaisp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.xuatxu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.giaban)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gianhap)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.soluong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hinhanh)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.tensp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.loaisp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.xuatxu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.giaban)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gianhap)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.soluong)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hinhanh)
+        </td>
+        <td>
+            @Html.ActionLink("Sửa", "Edit", new { id=item.masp.Trim() }) |
+            @Html.ActionLink("Thông tin", "Details", new { id=item.masp.Trim() }) |
+            @Html.ActionLink("Xóa", "Delete", new { id=item.masp.Trim() })
+        </td>
+    </tr>
+}
+
+</table>
