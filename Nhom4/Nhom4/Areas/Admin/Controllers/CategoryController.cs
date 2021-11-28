@@ -50,7 +50,7 @@ namespace Nhom4.Areas.Admin.Controllers
         {
             try
             {
-
+                string huongml;
             }
             catch { }
             if (ModelState.IsValid)
