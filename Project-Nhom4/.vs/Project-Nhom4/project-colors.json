@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a68a5c7c-d3ed-4789-b65c-582985718182": {
+      "ProjectGuid": "a68a5c7c-d3ed-4789-b65c-582985718182",
+      "DisplayName": "Model",
+      "ColorIndex": 0
+    },
+    "3cfa6d15-e0b0-4d39-9f1a-732d880ce2c1": {
+      "ProjectGuid": "3cfa6d15-e0b0-4d39-9f1a-732d880ce2c1",
+      "DisplayName": "Project-Nhom4",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

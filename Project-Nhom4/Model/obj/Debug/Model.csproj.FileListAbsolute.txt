@@ -1,0 +1,12 @@
+E:\Learn\Learn.Net\Project-Nhom4\Model\bin\Debug\Model.dll.config
+E:\Learn\Learn.Net\Project-Nhom4\Model\bin\Debug\Model.dll
+E:\Learn\Learn.Net\Project-Nhom4\Model\bin\Debug\Model.pdb
+E:\Learn\Learn.Net\Project-Nhom4\Model\bin\Debug\EntityFramework.dll
+E:\Learn\Learn.Net\Project-Nhom4\Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\Learn\Learn.Net\Project-Nhom4\Model\bin\Debug\EntityFramework.xml
+E:\Learn\Learn.Net\Project-Nhom4\Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\Learn\Learn.Net\Project-Nhom4\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+E:\Learn\Learn.Net\Project-Nhom4\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\Learn\Learn.Net\Project-Nhom4\Model\obj\Debug\Model.csproj.CopyComplete
+E:\Learn\Learn.Net\Project-Nhom4\Model\obj\Debug\Model.dll
+E:\Learn\Learn.Net\Project-Nhom4\Model\obj\Debug\Model.pdb
