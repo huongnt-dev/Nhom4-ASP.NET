@@ -17,7 +17,7 @@ namespace Project_Nhom4.Areas.Admin
             context.MapRoute(
                 "Admin_default",
                 "Admin/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional }
+                new { action = "Index",Controller="HomeAd", id = UrlParameter.Optional }
             );
         }
     }

@@ -47,7 +47,7 @@
 
                     @using (Html.BeginForm("Login", "Login", FormMethod.Post))
                     {
-                        @Html.ValidationSummary(false, "", "error")
+                        @Html.ValidationSummary(false, "", new { @class = "text-danger" });
                         <div class="form-group">
                             <label>Email address</label>
                             @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", @placeholder = "UserName", @autofocus = "autofocus" })

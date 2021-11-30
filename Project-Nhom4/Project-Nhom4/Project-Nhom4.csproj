@@ -128,10 +128,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
-    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\BaseController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeAdController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
     <Compile Include="Common\CommonContants.cs" />
+    <Compile Include="Common\Encrytor.cs" />
     <Compile Include="Common\UserLogin.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -185,6 +187,11 @@
     <Content Include="Areas\Admin\Assets\ass\js\vmap.sampledata.js" />
     <Content Include="Areas\Admin\Assets\ass\js\widgets.js" />
     <Content Include="Areas\Admin\Assets\ass\scss\style.css" />
+    <Content Include="Areas\Admin\Assets\css\AdminLTE.min.css" />
+    <Content Include="Areas\Admin\Assets\css\bootstrap.min.css" />
+    <Content Include="Areas\Admin\Assets\css\font-awesome.min.css" />
+    <Content Include="Areas\Admin\Assets\css\_all-skins.min.css" />
+    <Content Include="Areas\Admin\Assets\fonts\fontawesome-webfont.svg" />
     <Content Include="Areas\Admin\Assets\images\.gitignore" />
     <Content Include="Areas\Admin\Assets\images\admin.jpg" />
     <Content Include="Areas\Admin\Assets\images\avatar\1.jpg" />
@@ -198,6 +205,11 @@
     <Content Include="Areas\Admin\Assets\images\favicon.png" />
     <Content Include="Areas\Admin\Assets\images\logo.png" />
     <Content Include="Areas\Admin\Assets\images\logo2.png" />
+    <Content Include="Areas\Admin\Assets\images\user2-160x160.jpg" />
+    <Content Include="Areas\Admin\Assets\js\adminlte.min.js" />
+    <Content Include="Areas\Admin\Assets\js\bootstrap.min.js" />
+    <Content Include="Areas\Admin\Assets\js\jquery-ui.min.js" />
+    <Content Include="Areas\Admin\Assets\js\jquery.min.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -217,7 +229,14 @@
     <Content Include="Areas\Admin\Assets\ass\scss\style.css.map" />
     <Content Include="Areas\Admin\Assets\ass\scss\style.scss" />
     <Content Include="Areas\Admin\Assets\images\logo.psd" />
-    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAd\Index.cshtml" />
+    <Content Include="Areas\Admin\Assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Areas\Admin\Assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Areas\Admin\Assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Areas\Admin\Assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Areas\Admin\Assets\fonts\FontAwesome.otf" />
+    <Content Include="Areas\Admin\Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Navbar.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -247,7 +266,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Areas\Admin\Views\Base\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
