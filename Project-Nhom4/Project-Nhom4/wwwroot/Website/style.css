@@ -2201,16 +2201,15 @@ h2 {
 /**********************************/
 /****** Register & Login CSS ******/
 /**********************************/
-.login {
-    position: relative;
-    padding-top: 30px;
-}
-
-.login .login-form,
-.login .register-form {
-    padding: 30px;
-    background: #ffffff;
-    margin-bottom: 30px;
+ #content{
+position: absolute;
+top: 50%;
+left: 50%;
+height: 150px;
+margin-top: -75px;/* height/2 */
+width: 220px;
+margin-left: -110px; /* width/2 */
+background: red;
 }
 
 
