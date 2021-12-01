@@ -9,7 +9,7 @@ using System.Web.Mvc;
 
 namespace Project_Nhom4.Controllers
 {
-    public class UserController : Controller
+    public class UserKHController : Controller
     {
         // GET: User
         [HttpGet]

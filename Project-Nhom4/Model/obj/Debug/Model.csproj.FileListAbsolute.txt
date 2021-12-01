@@ -33,4 +33,3 @@ C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Model\obj\Debug\M
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Model\obj\Debug\Model.csproj.CopyComplete
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Model\obj\Debug\Model.dll
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Model\obj\Debug\Model.pdb
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Model\obj\Debug\Model.csproj.AssemblyReference.cache
