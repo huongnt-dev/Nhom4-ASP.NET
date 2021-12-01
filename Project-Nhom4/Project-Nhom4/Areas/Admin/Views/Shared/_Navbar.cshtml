@@ -12,11 +12,9 @@
         </a>
     </li>
     <li>
-        <a href="pages/widgets.html">
-            <i class="fa fa-code"></i> <span>Quản lý user</span>
-            <span class="pull-right-container">
-                <!--<small class="label pull-right bg-green">new</small>-->
-            </span>
-        </a>
+        @Html.ActionLink("Quản lý user", "Index", "User")
+    </li>
+    <li>
+        @Html.ActionLink("Quản lý sản phẩm", "Index", "Product")
     </li>
 </ul>
