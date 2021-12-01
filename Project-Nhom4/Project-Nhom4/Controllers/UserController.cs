@@ -35,7 +35,7 @@ namespace Project_Nhom4.Controllers
                 {
                     var user = new User();
                     user.Name = model.Name;
-                    user.Password = model.Password;
+                    user.Password = Encrytor.MD5Hash(model.Password);
                     user.Phone = model.Phone;
                     user.Email = model.Email;
                     user.Address = model.Address;
