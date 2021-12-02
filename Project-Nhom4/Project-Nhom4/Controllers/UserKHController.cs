@@ -17,6 +17,42 @@ namespace Project_Nhom4.Controllers
         {
             return View();
         }
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Login(LoginKH model)
+        {
+            if (ModelState.IsValid)
+            {
+                var dao = new UserDao();
+                var result = dao.Login(model.UserName, Encrytor.MD5Hash(model.Password));
+                if (result == 1)
+                {
+                    var user = dao.GetById(model.UserName);
+                    var userSession = new UserLogin();
+                    userSession.UserName = user.UserName;
+                    userSession.UserID = user.ID;
+                    Session.Add(CommonContants.USER_SESSION, userSession);
+                    return RedirectToAction("Index", "Home");
+                }
+                else if (result == 0)
+                {
+                    ModelState.AddModelError("", "Tài khoản không tồn tại!");
+                }
+                else if (result == -1)
+                {
+                    ModelState.AddModelError("", "Tài khoản bị khóa!");
+                }
+                else if (result == -2)
+                {
+                    ModelState.AddModelError("", "Mật khẩu không đúng!");
+                }
+            }
+            return View(model);          
+        }
         [HttpPost]
         public ActionResult Register(UserRegister model )
         {
@@ -34,6 +70,7 @@ namespace Project_Nhom4.Controllers
                 else
                 {
                     var user = new User();
+                    user.UserName = model.UserName;
                     user.Name = model.Name;
                     user.Password = Encrytor.MD5Hash(model.Password);
                     user.Phone = model.Phone;
@@ -44,8 +81,9 @@ namespace Project_Nhom4.Controllers
                     var result = dao.Insert(user);
                     if (result > 0)
                     {
-                        ViewBag.Success = "Successfully";
+                        ViewBag.Success = "Đăng kí thành công";
                         model = new UserRegister();
+                        
                     }
                     else
                     {

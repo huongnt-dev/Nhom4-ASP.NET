@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using Model.DAO;
 using Model.EF;
+using Project_Nhom4.Common;
 
 namespace Project_Nhom4.Areas.Admin.Controllers
 {

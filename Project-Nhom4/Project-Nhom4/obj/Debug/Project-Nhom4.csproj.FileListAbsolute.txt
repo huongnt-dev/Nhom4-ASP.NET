@@ -346,3 +346,7 @@ E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\PagedList
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\PagedList.Mvc.dll
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\PagedList.xml
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\PagedList.Mvc.xml
+C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\PagedList.dll
+C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\PagedList.Mvc.dll
+C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\PagedList.xml
+C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\PagedList.Mvc.xml
