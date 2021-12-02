@@ -51,13 +51,20 @@ namespace Project_Nhom4.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ID,UserName,Password,Name,Address,Email,Phone,CreateDate,CreateBy,ModifiedDate,ModifiedBy,Status")] User user)
         {
-            if (ModelState.IsValid)
+            if(user.UserName == null)
             {
-                var encryptedMd5Pas = Encrytor.MD5Hash(user.Password);
-                user.Password = encryptedMd5Pas;
-                db.Users.Add(user);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                if (ModelState.IsValid)
+                {
+                    var encryptedMd5Pas = Encrytor.MD5Hash(user.Password);
+                    user.Password = encryptedMd5Pas;
+                    db.Users.Add(user);
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
+            }
+            else
+            {
+                ViewBag.Error = "Tên tài khoản đã tồn tại!";
             }
 
             return View(user);
