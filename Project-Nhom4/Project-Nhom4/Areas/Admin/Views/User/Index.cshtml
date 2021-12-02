@@ -1,4 +1,5 @@
-﻿@model IEnumerable<Model.EF.User>
+﻿@model PagedList.IPagedList<Model.EF.User>
+@using PagedList.Mvc;
 
 @{
     ViewBag.Title = "Index";
@@ -32,25 +33,22 @@
                 <table class="table table-bordered table-hover">
                     <tr>
                         <th>
-                            @Html.DisplayNameFor(model => model.UserName)
+                            Tên tài khoản
                         </th>
                         <th>
-                            @Html.DisplayNameFor(model => model.Password)
+                            Tên người dùng
                         </th>
                         <th>
-                            @Html.DisplayNameFor(model => model.Name)
+                            Địa chỉ
                         </th>
                         <th>
-                            @Html.DisplayNameFor(model => model.Address)
+                            Email
                         </th>
                         <th>
-                            @Html.DisplayNameFor(model => model.Email)
+                            Số điện thoại
                         </th>
                         <th>
-                            @Html.DisplayNameFor(model => model.Phone)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Status)
+                            Trạng thái
                         </th>
                         <th style="width:100px;"></th>
                     </tr>
@@ -59,9 +57,6 @@
                         <tr>
                             <td>
                                 @Html.DisplayFor(modelItem => item.UserName)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Password)
                             </td>
                             <td>
                                 @Html.DisplayFor(modelItem => item.Name)
@@ -75,7 +70,7 @@
                             <td>
                                 @Html.DisplayFor(modelItem => item.Phone)
                             </td>
-                            
+
                             <td>
                                 @Html.DisplayFor(modelItem => item.Status)
                             </td>
@@ -87,13 +82,18 @@
                         </tr>
                     }
                 </table>
+                @Html.PagedListPager(Model, page => Url.Action("Index", new {page}))
                 <style type="text/css">
                     .pagination {
                         padding: 0px;
                         margin: 0px;
                     }
                 </style>
-                paging
+                @if (ViewBag.Error != null)
+                {
+                    <br />
+                    <div class="alert alert-danger" role="alert">@ViewBag.Error </div>
+                }
             </div>
         </div>
     </div>

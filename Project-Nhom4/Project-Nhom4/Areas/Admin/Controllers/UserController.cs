@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using Model.DAO;
 using Model.EF;
-using Project_Nhom4.Common;
 
 namespace Project_Nhom4.Areas.Admin.Controllers
 {
@@ -17,19 +16,21 @@ namespace Project_Nhom4.Areas.Admin.Controllers
         private ShopShoeDBContext db = new ShopShoeDBContext();
 
         // GET: Admin/User
-        public async Task<ActionResult> Index()
+        public ActionResult Index(int page = 1, int pageSize = 1)
         {
-            return View(await db.Users.ToListAsync());
+            var dao = new UserDao();
+            var model = dao.ListAllPaging(page, pageSize);
+;           return View(model);
         }
 
         // GET: Admin/User/Details/5
-        public async Task<ActionResult> Details(long? id)
+        public ActionResult Details(long? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            User user = await db.Users.FindAsync(id);
+            User user = db.Users.Find(id);
             if (user == null)
             {
                 return HttpNotFound();
@@ -48,14 +49,12 @@ namespace Project_Nhom4.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "ID,UserName,Password,Name,Address,Email,Phone,CreateDate,CreateBy,ModifiedDate,ModifiedBy,Status")] User user)
+        public ActionResult Create([Bind(Include = "ID,UserName,Password,Name,Address,Email,Phone,CreateDate,CreateBy,ModifiedDate,ModifiedBy,Status")] User user)
         {
             if (ModelState.IsValid)
             {
-                var encryptedMd5Pas = Encrytor.MD5Hash(user.Password);
-                user.Password = encryptedMd5Pas;
                 db.Users.Add(user);
-                await db.SaveChangesAsync();
+                db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
@@ -63,13 +62,13 @@ namespace Project_Nhom4.Areas.Admin.Controllers
         }
 
         // GET: Admin/User/Edit/5
-        public async Task<ActionResult> Edit(long? id)
+        public ActionResult Edit(long? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            User user = await db.Users.FindAsync(id);
+            User user = db.Users.Find(id);
             if (user == null)
             {
                 return HttpNotFound();
@@ -82,25 +81,25 @@ namespace Project_Nhom4.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "ID,UserName,Password,Name,Address,Email,Phone,CreateDate,CreateBy,ModifiedDate,ModifiedBy,Status")] User user)
+        public ActionResult Edit([Bind(Include = "ID,UserName,Password,Name,Address,Email,Phone,CreateDate,CreateBy,ModifiedDate,ModifiedBy,Status")] User user)
         {
             if (ModelState.IsValid)
             {
                 db.Entry(user).State = EntityState.Modified;
-                await db.SaveChangesAsync();
+                db.SaveChanges();
                 return RedirectToAction("Index");
             }
             return View(user);
         }
 
         // GET: Admin/User/Delete/5
-        public async Task<ActionResult> Delete(long? id)
+        public ActionResult Delete(long? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            User user = await db.Users.FindAsync(id);
+            User user = db.Users.Find(id);
             if (user == null)
             {
                 return HttpNotFound();
@@ -111,11 +110,11 @@ namespace Project_Nhom4.Areas.Admin.Controllers
         // POST: Admin/User/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> DeleteConfirmed(long id)
+        public ActionResult DeleteConfirmed(long id)
         {
-            User user = await db.Users.FindAsync(id);
+            User user = db.Users.Find(id);
             db.Users.Remove(user);
-            await db.SaveChangesAsync();
+            db.SaveChanges();
             return RedirectToAction("Index");
         }
 

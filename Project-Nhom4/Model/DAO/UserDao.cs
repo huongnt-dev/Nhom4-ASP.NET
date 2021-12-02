@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PagedList;
 
 namespace Model.DAO
 {
@@ -20,6 +21,12 @@ namespace Model.DAO
             db.SaveChanges();
             return entity.ID;
         }
+
+        public IEnumerable<User> ListAllPaging(int page, int pageSize)
+        {
+            return db.Users.OrderByDescending(x=>x.CreateDate).ToPagedList(page, pageSize);
+        }
+
         public User GetById(string userName)
         {
            return db.Users.SingleOrDefault(x=>x.UserName == userName);
@@ -46,6 +53,7 @@ namespace Model.DAO
                 }
             }
         }
+
         public bool checkUserName(string userName)
         {
             return db.Users.Count(x => x.UserName == userName) > 0;//trả về true( =0 trả về false)

@@ -33,3 +33,19 @@ C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Model\obj\Debug\M
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Model\obj\Debug\Model.csproj.CopyComplete
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Model\obj\Debug\Model.dll
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Model\obj\Debug\Model.pdb
+E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Model\bin\Debug\Model.dll.config
+E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Model\bin\Debug\Model.dll
+E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Model\bin\Debug\Model.pdb
+E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Model\bin\Debug\EntityFramework.dll
+E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Model\bin\Debug\EntityFramework.xml
+E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Model\obj\Debug\Model.csproj.CopyComplete
+E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Model\obj\Debug\Model.dll
+E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Model\obj\Debug\Model.pdb
+E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Model\bin\Debug\PagedList.dll
+E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Model\bin\Debug\PagedList.Mvc.dll
+E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Model\bin\Debug\PagedList.xml
+E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Model\bin\Debug\PagedList.Mvc.xml
