@@ -53,6 +53,8 @@ namespace Project_Nhom4.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
+                var encryptedMd5Pas = Encrytor.MD5Hash(user.Password);
+                user.Password = encryptedMd5Pas;
                 db.Users.Add(user);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -85,6 +87,8 @@ namespace Project_Nhom4.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
+                var encryptedMd5Pas = Encrytor.MD5Hash(user.Password);
+                user.Password = encryptedMd5Pas;
                 db.Entry(user).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
