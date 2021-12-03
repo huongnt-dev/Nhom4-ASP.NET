@@ -12,14 +12,8 @@ namespace Project_Nhom4.Controllers
         {
             return View();
         }
-        public ActionResult login()
-        {
-            return View();
-        }
-        public ActionResult Register()
-        {
-            return View();
-        }
+        
+
 
     }
 }

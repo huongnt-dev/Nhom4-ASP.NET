@@ -1,0 +1,47 @@
+﻿
+<div class="nav">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a href="#" class="navbar-brand">MENU</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav mr-auto">
+                    
+                    <a href=@Url.Action("Index","Home") class="nav-item nav-link">Home</a>
+                    <a href=@Url.Action("Index","Products") class="nav-item nav-link">Products</a>
+                    <a href="product-detail.html" class="nav-item nav-link">Product Detail</a>
+                    <a href="cart.html" class="nav-item nav-link">Cart</a>
+                    <a href="checkout.html" class="nav-item nav-link">Checkout</a>
+                    <a href="my-account.html" class="nav-item nav-link">My Account</a>
+                    
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <div class="nav-item dropdown">
+
+                        @{ var ss = Session[Project_Nhom4.Common.CommonContants.USER_SESSION];
+                            if (ss == null)
+                            {
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Account</a>
+                                <div class="dropdown-menu">
+
+                                    <a href=@Url.Action("Login","UserKH") class="nav-item nav-link">Login</a>
+                                    <a href=@Url.Action("Register","UserKH") class="nav-item nav-link">Register</a>
+                                   
+                                </div>
+                                    }
+                                    else
+                                    {
+                                    <p>xin chào </p>
+                                    }
+                                    }
+
+                                
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
