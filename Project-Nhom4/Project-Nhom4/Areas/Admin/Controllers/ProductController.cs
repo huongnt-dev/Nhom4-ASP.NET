@@ -6,7 +6,9 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using Model.DAO;
 using Model.EF;
+using Project_Nhom4.Common;
 
 namespace Project_Nhom4.Areas.Admin.Controllers
 {
@@ -15,9 +17,11 @@ namespace Project_Nhom4.Areas.Admin.Controllers
         private ShopShoeDBContext db = new ShopShoeDBContext();
 
         // GET: Admin/Product
-        public ActionResult Index()
+        public ActionResult Index(int page = 1, int pageSize = 3)
         {
-            return View(db.Products.ToList());
+            var dao = new ProductDao();
+            var model = dao.ListAllPaging(page, pageSize);
+            return View(model);
         }
 
         // GET: Admin/Product/Details/5
@@ -50,6 +54,15 @@ namespace Project_Nhom4.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
+                product.Image = "";
+                var f = Request.Files["ImageFile"];
+                if(f != null && f.ContentLength > 0)
+                {
+                    string FileName = System.IO.Path.GetFileName(f.FileName);
+                    string UploadPath = Server.MapPath("~/wwwroot/website/" + FileName);
+                    f.SaveAs(UploadPath);
+                    product.Image = FileName;
+                }
                 db.Products.Add(product);
                 db.SaveChanges();
                 return RedirectToAction("Index");

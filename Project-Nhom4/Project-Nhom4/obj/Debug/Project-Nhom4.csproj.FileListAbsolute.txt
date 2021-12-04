@@ -116,7 +116,6 @@ E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\ros
 E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\roslyn\System.IO.Compression.ZipFile.dll
 E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\roslyn\System.IO.FileSystem.dll
 E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\roslyn\System.IO.FileSystem.Primitives.dll
-E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\roslyn\System.Net.Http.dll
 E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\roslyn\System.Net.Sockets.dll
 E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\roslyn\System.Reflection.Metadata.dll
 E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
@@ -136,21 +135,7 @@ E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\ros
 E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\roslyn\vbc.rsp
 E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\roslyn\VBCSCompiler.exe
 E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\roslyn\VBCSCompiler.exe.config
-E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\Antlr3.Runtime.dll
-E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\EntityFramework.dll
-E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\EntityFramework.SqlServer.dll
-E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\Microsoft.Web.Infrastructure.dll
 E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\Model.dll
-E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\Newtonsoft.Json.dll
-E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.Helpers.dll
-E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.Mvc.dll
-E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.Optimization.dll
-E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.Razor.dll
-E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.WebPages.Deployment.dll
-E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.WebPages.dll
-E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.WebPages.Razor.dll
-E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\WebGrease.dll
 E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\Model.pdb
 E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\Model.dll.config
 E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\EntityFramework.xml
@@ -288,7 +273,6 @@ E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\roslyn\Sy
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\roslyn\System.IO.Compression.ZipFile.dll
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\roslyn\System.IO.FileSystem.dll
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\roslyn\System.IO.FileSystem.Primitives.dll
-E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\roslyn\System.Net.Http.dll
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\roslyn\System.Net.Sockets.dll
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\roslyn\System.Reflection.Metadata.dll
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
@@ -308,21 +292,7 @@ E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\roslyn\vb
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\roslyn\vbc.rsp
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\roslyn\VBCSCompiler.exe
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\roslyn\VBCSCompiler.exe.config
-E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\Antlr3.Runtime.dll
-E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\EntityFramework.dll
-E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\EntityFramework.SqlServer.dll
-E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\Microsoft.Web.Infrastructure.dll
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\Model.dll
-E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\Newtonsoft.Json.dll
-E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\System.Web.Helpers.dll
-E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\System.Web.Mvc.dll
-E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\System.Web.Optimization.dll
-E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\System.Web.Razor.dll
-E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\System.Web.WebPages.Deployment.dll
-E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\System.Web.WebPages.dll
-E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\System.Web.WebPages.Razor.dll
-E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\WebGrease.dll
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\Model.pdb
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\Model.dll.config
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\EntityFramework.xml
@@ -342,11 +312,11 @@ E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\obj\Debug\Pro
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\obj\Debug\Project-Nhom4.csproj.CopyComplete
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\obj\Debug\Project-Nhom4.dll
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\obj\Debug\Project-Nhom4.pdb
-E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\PagedList.dll
-E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\PagedList.Mvc.dll
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\PagedList.xml
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\PagedList.Mvc.xml
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\PagedList.dll
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\PagedList.Mvc.dll
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\PagedList.xml
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\PagedList.Mvc.xml
+E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\PagedList.xml
+E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\PagedList.Mvc.xml

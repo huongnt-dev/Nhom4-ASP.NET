@@ -1,160 +1,140 @@
-﻿@model IEnumerable<Model.EF.Product>
+﻿@model PagedList.IPagedList<Model.EF.Product>
+@using PagedList.Mvc;
 
 @{
     ViewBag.Title = "Index";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Index</h2>
+<section class="content-header">
+    <h1>
+        Quản lý sản phẩm
+        <small>Control panel</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><i class="fa fa-dashboard"></i>@Html.ActionLink("Home", "Index", "HomeAd")</li>
+        <li class="active">Product</li>
+    </ol>
+</section>
+<style>
+    .test {
+        color: white !important;
+    }
+</style>
+<!-- Main content -->
+<section class="content">
+    <div class="col-md-12">
+        <div style="margin-bottom:5px;">
+            <div class="btn btn-primary">@Html.ActionLink("Tạo mới sản phẩm", "Create", "Product", new { @class = "test" })</div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">List sản phẩm</div>
+            <div class="panel-body">
+                <table class="table table-bordered table-hover">
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Code
+                        </th>
+                        <th>
+                            Description
+                        </th>
+                        <th>
+                            Image
+                        </th>
+                        <th>
+                            MoreImages
+                        </th>
+                        <th>
+                            Price
+                        </th>
+                        <th>
+                            PromotionPrice
+                        </th>
+                        <th>
+                            IncludeVAT
+                        </th>
+                        <th>
+                            Quantity
+                        </th>
+                        <th>
+                            CategoryID
+                        </th>
+                        <th>
+                            TopHot
+                        </th>
+                        <th>
+                            ViewCount
+                        </th>
+                        <th style="width:100px;"></th>
+                    </tr>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Code)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Description)
+                            </td>
+                            <td>
+                                @{ 
+                                    // lấy đuognừ dẫn file ảnh
+                                    string ImagePath = "~/wwwroot/Website/img/" + item.Image;
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Code)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.MetaTitle)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Image)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.MoreImages)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Price)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PromotionPrice)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.IncludeVAT)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Quantity)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CategoryID)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Detail)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Warranty)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CreateDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CreateBy)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ModifiedDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ModifiedBy)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.MetaKeywords)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.MetaDescriptions)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Stutus)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TopHot)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ViewCount)
-        </th>
-        <th></th>
-    </tr>
+                                }
+                                <img src="@Url.Content(ImagePath)" width="100" class="img-thumbnail" />
+                                <br />
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MoreImages)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Price)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PromotionPrice)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.IncludeVAT)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Quantity)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CategoryID)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TopHot)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ViewCount)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) <br />
+                                @Html.ActionLink("Details", "Details", new { id = item.ID }) <br />
+                                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                            </td>
+                        </tr>
+                    }
+                </table>
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+                <style type="text/css">
+                    .pagination {
+                        padding: 0px;
+                        margin: 0px;
+                    }
+                </style>
+                
+            </div>
+        </div>
+    </div>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Code)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.MetaTitle)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Image)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.MoreImages)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Price)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PromotionPrice)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.IncludeVAT)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Quantity)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CategoryID)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Detail)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Warranty)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CreateDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CreateBy)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ModifiedDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ModifiedBy)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.MetaKeywords)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.MetaDescriptions)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Stutus)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopHot)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ViewCount)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-        </td>
-    </tr>
-}
+</section>
 
-</table>
+

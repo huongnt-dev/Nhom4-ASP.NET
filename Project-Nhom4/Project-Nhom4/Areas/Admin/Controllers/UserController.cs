@@ -17,7 +17,7 @@ namespace Project_Nhom4.Areas.Admin.Controllers
         private ShopShoeDBContext db = new ShopShoeDBContext();
 
         // GET: Admin/User
-        public ActionResult Index(int page = 1, int pageSize = 1)
+        public ActionResult Index(int page = 1, int pageSize = 3)
         {
             var dao = new UserDao();
             var model = dao.ListAllPaging(page, pageSize);
@@ -52,22 +52,14 @@ namespace Project_Nhom4.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ID,UserName,Password,Name,Address,Email,Phone,CreateDate,CreateBy,ModifiedDate,ModifiedBy,Status")] User user)
         {
-            if(user.UserName == null)
+            if (ModelState.IsValid)
             {
-                if (ModelState.IsValid)
-                {
-                    var encryptedMd5Pas = Encrytor.MD5Hash(user.Password);
-                    user.Password = encryptedMd5Pas;
-                    db.Users.Add(user);
-                    db.SaveChanges();
-                    return RedirectToAction("Index");
-                }
+                var encryptedMd5Pas = Encrytor.MD5Hash(user.Password);
+                user.Password = encryptedMd5Pas;
+                db.Users.Add(user);
+                db.SaveChanges();
+                return RedirectToAction("Index");
             }
-            else
-            {
-                ViewBag.Error = "Tên tài khoản đã tồn tại!";
-            }
-
             return View(user);
         }
 
