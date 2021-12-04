@@ -21,6 +21,7 @@ namespace Project_Nhom4.Controllers
             ViewBag.CurrentSort = sortOrder;//biến lấy yêu cầu sắp xếp hiện tại
             ViewBag.saptheogiatang = sortOrder == "gia"?"":"gia";
             ViewBag.saptheogiagiam = sortOrder == "gia_desc" ? "" : "gia_desc";
+            ViewBag.saptheogia100k_300k = sortOrder == "gia100_300"?"": "gia100_300";
             //ViewBag.saptheogiagiam = sortOrder == "gia_desc";
 
             //Lấy giá trị bộ lọc dữ liệu hiện tại
@@ -51,11 +52,14 @@ namespace Project_Nhom4.Controllers
                 case "gia_desc":
                     product = product.OrderByDescending(s => s.Price);
                     break;
+                case "gia100_300":
+                    product = product.Where(s => s.Price >= 100000 && s.Price <= 200000).OrderBy(s=> s.Name);
+                    break;
                 default:
                     product = product.OrderBy(s => s.ID);
                     break;
             }
-            int pageSize = 3;
+            int pageSize = 5;
             int PageNumber = (page ?? 1);//nếu page bằng Null thì trả về 1
             return View(product.ToPagedList(PageNumber,pageSize));
         }
