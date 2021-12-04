@@ -46,17 +46,11 @@
                                             <div class="dropdown">
                                                 <div class="dropdown-toggle" data-toggle="dropdown">Product price range</div>
                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                    @Html.ActionLink("Tăng dần", "Index", new { sortOrder = ViewBag.saptheogiatang, currentFilter = ViewBag.CurrentFilter })
-                                                    @Html.ActionLink("Giảm dần", "Index", new { sortOrder = ViewBag.saptheogiagiam, currentFilter = ViewBag.CurrentFilter })
-                                                    <a href="#" class="dropdown-item">$51 to $100</a>
-                                                    <a href="#" class="dropdown-item">$101 to $150</a>
-                                                    <a href="#" class="dropdown-item">$151 to $200</a>
-                                                    <a href="#" class="dropdown-item">$201 to $250</a>
-                                                    <a href="#" class="dropdown-item">$251 to $300</a>
-                                                    <a href="#" class="dropdown-item">$301 to $350</a>
-                                                    <a href="#" class="dropdown-item">$351 to $400</a>
-                                                    <a href="#" class="dropdown-item">$401 to $450</a>
-                                                    <a href="#" class="dropdown-item">$451 to $500</a>
+                                                    <a href="/Products/Index?sortOrder=@ViewBag.saptheogiatang" class="dropdown-item">Tăng</a>
+                                                    <a href="/Products/Index?sortOrder=@ViewBag.saptheogiagiam" class="dropdown-item">Giảm</a>
+                                                    <a href="/Products/Index?sortOrder=@ViewBag.saptheogia100k_300k" class="dropdown-item">100k-300k</a>
+                                                   
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -79,21 +73,23 @@
                                         </div>
                                     </div>
                                     <div class="product-image">
-                                        <a href="product-detail.html">
-                                            <img src="~/wwwroot/Website/img/prod1.jpg" alt="Product Image">
+                                        <a href="">
+                                            <img src='@Url.Content("~/wwwroot/Website/img/prod1.jpg")' alt="Product Image">
                                         </a>
                                         <div class="product-action">
                                             <a href="#"><i class="fa fa-cart-plus"></i></a>
                                             <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
+                                            <a href="/Products/Details/@item.ID"><i class="fa fa-search"></i></a>
                                         </div>
                                     </div>
                                     <div class="product-price">
-                                        <h3><span>$</span>@Html.DisplayFor(modelItem => item.Price)</h3>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                        <h3>@Html.DisplayFor(modelItem => item.Price)<span>đ</span></h3>
+                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Mua Ngay</a>
                                     </div>
                                 </div>
                             </div>
+                            
+                            
                         }
                     </div>
                 </div>
@@ -101,9 +97,15 @@
         </div>
     </div>
 </body>
+
 </html>
+
 Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
-@Html.PagedListPager(Model, page => Url.Action("Index", new{page,sortOrder = ViewBag.CurrentSort,currentFilter= ViewBag.CurrentFilter
+@Html.PagedListPager(Model, page => Url.Action("Index", new
+{
+    page,
+    sortOrder = ViewBag.CurrentSort,
+    currentFilter = ViewBag.CurrentFilter
 }))
 
 
