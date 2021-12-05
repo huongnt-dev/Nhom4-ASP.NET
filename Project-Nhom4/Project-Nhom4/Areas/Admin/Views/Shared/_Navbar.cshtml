@@ -7,14 +7,14 @@
         </a>
     </li>
     <li>
-        <a href="pages/widgets.html">
-            <i class="fa fa-th"></i> <span>Danh sách tin tức</span>
+        <a href="@Url.Action("Index", "User")">
+            <i class="fa fa-th"></i> <span>Quản lý User</span>
         </a>
     </li>
     <li>
-        @Html.ActionLink("Quản lý user", "Index", "User")
+        <a href="@Url.Action("Index", "Product")">
+            <i class="fa fa-th"></i> <span>Quản lý sản phẩm</span>
+        </a>
     </li>
-    <li>
-        @Html.ActionLink("Quản lý sản phẩm", "Index", "Product")
-    </li>
+    
 </ul>

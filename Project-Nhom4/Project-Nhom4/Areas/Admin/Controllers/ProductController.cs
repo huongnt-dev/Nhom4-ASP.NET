@@ -42,7 +42,13 @@ namespace Project_Nhom4.Areas.Admin.Controllers
         // GET: Admin/Product/Create
         public ActionResult Create()
         {
+            SetViewBag();
             return View();
+        }
+        public void SetViewBag(long? selectedID = null)
+        {
+            var dao = new CategoryDao();
+            ViewBag.CategoryID = new SelectList(dao.ListAll(), "ID", "Name", selectedID);
         }
 
         // POST: Admin/Product/Create
@@ -66,8 +72,9 @@ namespace Project_Nhom4.Areas.Admin.Controllers
                 db.Products.Add(product);
                 db.SaveChanges();
                 return RedirectToAction("Index");
+                
             }
-
+            SetViewBag();
             return View(product);
         }
 

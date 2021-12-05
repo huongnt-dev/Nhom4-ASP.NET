@@ -447,9 +447,9 @@
     <Content Include="Views\Shared\TopMenu.cshtml" />
     <Content Include="Views\Products\Create.cshtml" />
     <Content Include="Views\Products\Delete.cshtml" />
+    <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
-<<<<<<< HEAD
     <Content Include="wwwroot\Admin\images\logo.psd" />
     <Content Include="wwwroot\Website\lib\slick\config.rb" />
     <Content Include="wwwroot\Website\lib\slick\fonts\slick.eot" />
@@ -459,9 +459,6 @@
     <Content Include="wwwroot\Website\lib\slick\slick-theme.scss" />
     <Content Include="wwwroot\Website\lib\slick\slick.less" />
     <Content Include="wwwroot\Website\lib\slick\slick.scss" />
-=======
-    <Content Include="Views\Products\Details.cshtml" />
->>>>>>> e49d49bf1db8418ebf03d2865e059f2b7c8a137a
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
