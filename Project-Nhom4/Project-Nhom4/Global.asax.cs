@@ -17,5 +17,9 @@ namespace Project_Nhom4
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+        protected void Session_Start()
+        {
+            Session["UserId"] = "1";
+        }
     }
 }

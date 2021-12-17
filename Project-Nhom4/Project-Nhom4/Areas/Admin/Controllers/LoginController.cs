@@ -28,6 +28,7 @@ namespace Project_Nhom4.Areas.Admin.Controllers
                     var userSession = new UserLogin();
                     userSession.UserName = user.UserName;
                     userSession.UserID = user.ID;
+                    Session["FullName"] = user.UserName;
                     Session.Add(CommonContants.USER_SESSION, userSession);
                     return RedirectToAction("Index", "HomeAd"); 
                 }

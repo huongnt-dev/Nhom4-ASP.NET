@@ -6,22 +6,33 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using Model.DAO;
 using Model.EF;
-using Project_Nhom4.Common;
+using Model.DAO;
 
 namespace Project_Nhom4.Areas.Admin.Controllers
 {
     public class ProductController : Controller
     {
         private ShopShoeDBContext db = new ShopShoeDBContext();
-
+        CategoryDao categoryDao = new CategoryDao();
         // GET: Admin/Product
-        public ActionResult Index(int page = 1, int pageSize = 3)
+        public ActionResult Index()
         {
-            var dao = new ProductDao();
-            var model = dao.ListAllPaging(page, pageSize);
-            return View(model);
+            var list = db.Products.
+                Join(db.Categories,
+                    p => p.CategoryID,
+                    c => c.ID,
+                    (p, c) => new ProductCategory
+                    {
+                        ProductId = p.ID,
+                        ProductName = p.Name,
+                        ProductImg = p.Image,
+                        ProductStatus = p.Stutus,
+                        CategoryName = c.Name,
+                    }
+                )
+                .Where(m => m.ProductStatus != false);
+            return View(list.ToList());
         }
 
         // GET: Admin/Product/Details/5
@@ -42,13 +53,9 @@ namespace Project_Nhom4.Areas.Admin.Controllers
         // GET: Admin/Product/Create
         public ActionResult Create()
         {
-            SetViewBag();
+            
+            ViewBag.ListSP = new SelectList(categoryDao.getList("Index"), "Id", "Name", 0);
             return View();
-        }
-        public void SetViewBag(long? selectedID = null)
-        {
-            var dao = new CategoryDao();
-            ViewBag.CategoryID = new SelectList(dao.ListAll(), "ID", "Name", selectedID);
         }
 
         // POST: Admin/Product/Create
@@ -60,21 +67,12 @@ namespace Project_Nhom4.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                product.Image = "";
-                var f = Request.Files["ImageFile"];
-                if(f != null && f.ContentLength > 0)
-                {
-                    string FileName = System.IO.Path.GetFileName(f.FileName);
-                    string UploadPath = Server.MapPath("~/wwwroot/website/" + FileName);
-                    f.SaveAs(UploadPath);
-                    product.Image = FileName;
-                }
+                
                 db.Products.Add(product);
                 db.SaveChanges();
                 return RedirectToAction("Index");
-                
             }
-            SetViewBag();
+            ViewBag.ListSP = new SelectList(categoryDao.getList("Index"), "Id", "Name", 0);
             return View(product);
         }
 

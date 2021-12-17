@@ -1,4 +1,4 @@
-namespace Model.EF
+﻿namespace Model.EF
 {
     using System;
     using System.Collections.Generic;
@@ -9,11 +9,14 @@ namespace Model.EF
     [Table("Category")]
     public partial class Category
     {
+        [Key]
         public long ID { get; set; }
 
+        [Required(ErrorMessage ="Tên không được để trống")]
         [StringLength(250)]
         public string Name { get; set; }
 
+        [Required(ErrorMessage ="Tiêu đề không được để trống")]
         [StringLength(250)]
         public string MetaTitle { get; set; }
 
