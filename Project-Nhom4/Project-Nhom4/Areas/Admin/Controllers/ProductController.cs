@@ -65,7 +65,7 @@ namespace Project_Nhom4.Areas.Admin.Controllers
                 if(f != null && f.ContentLength > 0)
                 {
                     string FileName = System.IO.Path.GetFileName(f.FileName);
-                    string UploadPath = Server.MapPath("~/wwwroot/website/" + FileName);
+                    string UploadPath = Server.MapPath("~/wwwroot/Website/" + FileName);
                     f.SaveAs(UploadPath);
                     product.Image = FileName;
                 }

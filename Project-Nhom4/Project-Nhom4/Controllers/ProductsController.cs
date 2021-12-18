@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using Model.EF;
 using PagedList;
+using Project_Nhom4.Common;
 namespace Project_Nhom4.Controllers
 {
     public class ProductsController : Controller
@@ -36,8 +37,7 @@ namespace Project_Nhom4.Controllers
             ViewBag.CurrentFilter = searchstring;
 
             //lấy danh sách hàng
-            var product = db.Products.Select(p => p);
-
+            var product = db.Products.Select(p => p);        
             //lọc theo tên hàng
             if (!String.IsNullOrEmpty(searchstring))
             {
@@ -59,7 +59,7 @@ namespace Project_Nhom4.Controllers
                     product = product.OrderBy(s => s.ID);
                     break;
             }
-            int pageSize = 5;
+            int pageSize = 9;
             int PageNumber = (page ?? 1);//nếu page bằng Null thì trả về 1
             return View(product.ToPagedList(PageNumber,pageSize));
         }

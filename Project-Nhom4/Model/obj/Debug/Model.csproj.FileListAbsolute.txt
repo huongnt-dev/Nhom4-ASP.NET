@@ -57,3 +57,4 @@ E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Model\bin\Debug\Paged
 E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Model\bin\Debug\PagedList.Mvc.dll
 E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Model\bin\Debug\PagedList.xml
 E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Model\bin\Debug\PagedList.Mvc.xml
+C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Model\obj\Debug\Model.csproj.AssemblyReference.cache

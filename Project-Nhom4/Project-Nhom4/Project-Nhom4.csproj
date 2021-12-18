@@ -140,6 +140,7 @@
     <Compile Include="Areas\Admin\Controllers\UserController.cs" />
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
     <Compile Include="Common\LoginKH.cs" />
+    <Compile Include="Common\TopProduct.cs" />
     <Compile Include="Common\UserRegister.cs" />
     <Compile Include="Common\CommonContants.cs" />
     <Compile Include="Common\Encrytor.cs" />

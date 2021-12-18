@@ -187,7 +187,6 @@ C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\roslyn\System.IO.Compression.ZipFile.dll
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\roslyn\System.IO.FileSystem.dll
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\roslyn\System.Net.Http.dll
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\roslyn\System.Net.Sockets.dll
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\roslyn\System.Reflection.Metadata.dll
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
@@ -207,35 +206,9 @@ C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\roslyn\vbc.rsp
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\roslyn\VBCSCompiler.exe
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\Antlr3.Runtime.dll
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\EntityFramework.dll
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\EntityFramework.SqlServer.dll
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\Model.dll
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\Newtonsoft.Json.dll
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.Helpers.dll
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.Mvc.dll
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.Optimization.dll
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.Razor.dll
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.WebPages.Deployment.dll
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.WebPages.dll
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.WebPages.Razor.dll
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\WebGrease.dll
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\Model.pdb
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\Model.dll.config
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\EntityFramework.xml
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\EntityFramework.SqlServer.xml
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.Helpers.xml
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.Mvc.xml
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.Optimization.xml
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.Razor.xml
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.WebPages.xml
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.WebPages.Deployment.xml
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\System.Web.WebPages.Razor.xml
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\Newtonsoft.Json.xml
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\Antlr3.Runtime.pdb
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\obj\Debug\Project-Nhom4.csproj.AssemblyReference.cache
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\obj\Debug\Project-Nhom4.csproj.CoreCompileInputs.cache
 C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\obj\Debug\Project-Nhom4.csproj.CopyComplete
@@ -314,9 +287,5 @@ E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\obj\Debug\Pro
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\obj\Debug\Project-Nhom4.pdb
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\PagedList.xml
 E:\Learn\Learn.Net\Project-Nhom44-pull\Project-Nhom4\Project-Nhom4\bin\PagedList.Mvc.xml
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\PagedList.dll
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\PagedList.Mvc.dll
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\PagedList.xml
-C:\Users\ndcph\OneDrive\Máy tính\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\PagedList.Mvc.xml
 E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\PagedList.xml
 E:\Learn\Learn.Net\ASP.NET-git\Nhom4-ASP.NET\Project-Nhom4\Project-Nhom4\bin\PagedList.Mvc.xml
